@@ -13,6 +13,11 @@
     "nodemon": "^1.18.10"
   },
   "dependencies": {
-    "html-template-tag": "^3.0.0"
+    "express": "^4.16.4",
+    "html-template-tag": "^3.0.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.8.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.43.0"
   }
 }
