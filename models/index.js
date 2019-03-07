@@ -34,6 +34,8 @@ const User = db.define("user", {
   }
 });
 
+Page.belongsTo(User, { as: 'author' });
+
 function slugify(str) {
   return str.replace(/\s+/g, "_").replace(/\W/g, "");
 }
@@ -41,5 +43,7 @@ function slugify(str) {
 Page.beforeValidate(pageInstance => {
   pageInstance.slug = slugify(pageInstance.title);
 });
+
+
 
 module.exports = { db, Page, User };
